@@ -1,0 +1,13 @@
+
+<h6 align="center" style="margin: .75em;">List of All the Countries in Our Database</h6>
+
+<div class="container">
+    <div class="d-flex justify-content-center row  col-md-12 mt-2">
+      <div class="col-md-3 p-5 m-3" style="padding: 1.5em; padding-block: 1; margin-right: 2em; margin-top: 2em;background-color: limegreen; font-family: Arial, Helvetica, sans-serif; color: white; text-align: center;"
+       *ngFor="let country of countries" routerLink="/detail" [state]="{counter : country}">
+        <span><strong>{{country.name}}</strong></span>
+        <h6></h6>
+        <span>Capital: {{country.capital}}</span>
+      </div>
+    </div>
+  </div>

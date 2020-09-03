@@ -1,0 +1,19 @@
+<div align="center"  class="container mt-5">
+    <h2 class="title">The Most Populated Countries</h2>
+    <div class="d-flex justify-content-center row col-md-12 mt-2">
+        <div class="col-md-3 p-5 m-3" style="background-color:saddlebrown; color:white;" *ngFor="let country of topPopulated " routerLink="/detail" [state]="{country : country}" >
+            <h5><strong>{{country.name}}</strong></h5>
+            <span>{{country.population | number : 0}} Peoples</span>
+        </div>
+    </div>        
+</div>
+
+<div align="center" class="container">
+    <h2  class="title">The Largest Countries (Area) </h2>
+    <div class="d-flex justify-content-center row col-md-12 mt-2">
+        <div class="col-md-3 p-5 m-3" style="background-color: darkgoldenrod; color:white;" *ngFor="let country of topLargest " routerLink="/detail" [state]="{country : country}">
+            <h5><strong>{{country.name}}</strong></h5>
+            <span>{{country.area | number : 0}} Km<sup>2</sup></span>
+        </div>
+    </div>
+</div>

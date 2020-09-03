@@ -1,0 +1,35 @@
+<div text-align="" class="container mt-3 d-flex justify-content-center row col-md-12">
+    <div class="col-md-4">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <h4>{{country.name}}</h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-success">Capital</td>
+                <td class="h5">: {{country.capital}}</td>
+            </tr>
+            <tr>
+                <td class="text-success">Area</td>
+                <td class="h5">: {{country.area | number : 0}} Km<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td class="text-success">Population</td>
+                <td class="h5">: {{country.population | number : 0}}</td>
+            </tr>
+            <tr>
+                <td class="text-success">GDP</td>
+                <td class="h5">: {{country.gdp | number : 0}} USD </td>
+            </tr>
+            <tr>
+                <td class="text-success">Currency</td>
+                <td class="h5">: {{country.currency}}</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-sm btn-rounded btn-danger">Go back</button></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
